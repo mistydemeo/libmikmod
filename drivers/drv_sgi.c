@@ -20,7 +20,7 @@
   
 /*==============================================================================
 
-  $Id: drv_sgi.c,v 1.1 2005/03/30 01:30:39 raphassenat Exp $
+  $Id: drv_sgi.c,v 1.2 2005/03/30 19:09:11 realtech Exp $
 
   Driver for output on SGI audio system (needs libaudio from the dmedia
   package).

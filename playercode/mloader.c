@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: mloader.c,v 1.1 2005/03/30 01:31:03 raphassenat Exp $
+  $Id: mloader.c,v 1.2 2005/03/30 19:11:19 realtech Exp $
 
   These routines are used to access the available module loaders
 

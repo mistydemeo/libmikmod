@@ -4,7 +4,7 @@
 # Created: 1993-05-16
 # Public domain
 
-# $Id: mkinstalldirs,v 1.1 2005/03/30 01:30:25 raphassenat Exp $
+# $Id: mkinstalldirs,v 1.2 2005/03/30 19:09:08 realtech Exp $
 
 errstatus=0
 

@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: mikmod_build.h,v 1.1 2005/03/30 01:31:06 raphassenat Exp $
+  $Id: mikmod_build.h,v 1.2 2005/03/30 19:12:10 realtech Exp $
 
   MikMod sound library include file
 

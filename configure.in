@@ -1,6 +1,6 @@
 dnl Process this file with autoconf to produce a configure script.
 dnl
-dnl $Id: configure.in,v 1.1 2005/03/30 01:30:22 raphassenat Exp $
+dnl $Id: configure.in,v 1.2 2005/03/30 19:09:08 realtech Exp $
 
 AC_INIT(include/mikmod.h.in)
 

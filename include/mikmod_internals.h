@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: mikmod_internals.h,v 1.1 2005/03/30 01:30:41 raphassenat Exp $
+  $Id: mikmod_internals.h,v 1.2 2005/03/30 19:09:29 realtech Exp $
 
   MikMod sound library internal definitions
 

@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_med.c,v 1.1 2005/03/30 01:30:43 raphassenat Exp $
+  $Id: load_med.c,v 1.2 2005/03/30 19:10:00 realtech Exp $
 
   Amiga MED module loader
 

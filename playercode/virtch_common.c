@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: virtch_common.c,v 1.1 2005/03/30 01:31:05 raphassenat Exp $
+  $Id: virtch_common.c,v 1.2 2005/03/30 19:11:50 realtech Exp $
 
   Common source parts between the two software mixers.
   This file is probably the ugliest part of libmikmod...

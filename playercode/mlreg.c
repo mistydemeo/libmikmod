@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: mlreg.c,v 1.1 2005/03/30 01:31:03 raphassenat Exp $
+  $Id: mlreg.c,v 1.2 2005/03/30 19:11:34 realtech Exp $
 
   Routine for registering all loaders in libmikmod for the current platform.
 

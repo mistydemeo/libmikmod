@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_s3m.c,v 1.1 2005/03/30 01:30:43 raphassenat Exp $
+  $Id: load_s3m.c,v 1.2 2005/03/30 19:10:02 realtech Exp $
 
   Screamtracker (S3M) module loader
 

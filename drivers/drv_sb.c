@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: drv_sb.c,v 1.1 2005/03/30 01:30:39 raphassenat Exp $
+  $Id: drv_sb.c,v 1.2 2005/03/30 19:09:11 realtech Exp $
 
   Driver for SoundBlaster/Pro/16/AWE32 under DOS
 

@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_asy.c,v 1.1 2005/03/30 01:30:41 raphassenat Exp $
+  $Id: load_asy.c,v 1.2 2005/03/30 19:09:33 realtech Exp $
 
   ASYLUM Music Format v1.0 (.amf) loader
   adapted from load_mod.c by Raphael Assenat <raph@raphnet.net>,

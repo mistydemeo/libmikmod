@@ -20,7 +20,7 @@
 
 /*==============================================================================
   
-  $Id: drv_sam9407.c,v 1.1 2005/03/30 01:30:39 raphassenat Exp $
+  $Id: drv_sam9407.c,v 1.2 2005/03/30 19:09:11 realtech Exp $
   
   Driver for the Linux sam9407 driver
   

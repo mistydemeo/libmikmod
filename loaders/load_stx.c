@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_stx.c,v 1.1 2005/03/30 01:30:44 raphassenat Exp $
+  $Id: load_stx.c,v 1.2 2005/03/30 19:10:06 realtech Exp $
 
   STMIK 0.2 (STX) module loader
 

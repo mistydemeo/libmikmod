@@ -1,5 +1,5 @@
 /*** drv_nas.c --- MikMod sound library NAS output driver  -*- C -*- */
-/** $Id: drv_nas.c,v 1.1 2005/03/30 01:30:38 raphassenat Exp $ */
+/** $Id: drv_nas.c,v 1.2 2005/03/30 19:09:11 realtech Exp $ */
 
 /*** Copyright (C) 2004 Ivan Shmakov */
 

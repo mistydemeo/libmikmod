@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_uni.c,v 1.1 2005/03/30 01:30:44 raphassenat Exp $
+  $Id: load_uni.c,v 1.2 2005/03/30 19:10:07 realtech Exp $
 
   UNIMOD (libmikmod's and APlayer's internal module format) loader
 

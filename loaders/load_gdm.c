@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_gdm.c,v 1.1 2005/03/30 01:30:42 raphassenat Exp $
+  $Id: load_gdm.c,v 1.2 2005/03/30 19:09:35 realtech Exp $
 
   General DigiMusic (GDM) module loader
 

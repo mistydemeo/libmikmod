@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: drv_gp32.c,v 1.1 2005/03/30 01:30:38 raphassenat Exp $
+  $Id: drv_gp32.c,v 1.2 2005/03/30 19:09:11 realtech Exp $
 
   Driver for output on gp32 platform 
 

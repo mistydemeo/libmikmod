@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: drv_ultra.c,v 1.1 2005/03/30 01:30:39 raphassenat Exp $
+  $Id: drv_ultra.c,v 1.2 2005/03/30 19:09:11 realtech Exp $
 
   Driver for Gravis Ultrasound cards using libGUS.
   A subset of libGUS is provided for DOS/DJGPP and OS/2

@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: sloader.c,v 1.1 2005/03/30 01:31:04 raphassenat Exp $
+  $Id: sloader.c,v 1.2 2005/03/30 19:11:49 realtech Exp $
 
   Routines for loading samples. The sample loader utilizes the routines
   provided by the "registered" sample loader.

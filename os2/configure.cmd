@@ -22,7 +22,7 @@
 
 /*==============================================================================
 
-  $Id: configure.cmd,v 1.1 2005/03/30 01:31:01 raphassenat Exp $
+  $Id: configure.cmd,v 1.2 2005/03/30 19:11:09 realtech Exp $
 
   Configuration script for libmikmod under OS/2
 

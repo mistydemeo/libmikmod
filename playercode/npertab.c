@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: npertab.c,v 1.1 2005/03/30 01:31:04 raphassenat Exp $
+  $Id: npertab.c,v 1.2 2005/03/30 19:11:47 realtech Exp $
 
   MOD format period table.  Used by both the MOD and M15 (15-inst mod) Loaders.
 

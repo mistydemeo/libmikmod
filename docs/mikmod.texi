@@ -7,7 +7,7 @@
 
   MikMod Sound Library Documentation
 
-  $Id: mikmod.texi,v 1.1 2005/03/30 01:30:31 raphassenat Exp $
+  $Id: mikmod.texi,v 1.2 2005/03/30 19:09:10 realtech Exp $
 
 @end ignore
 @c comment this during modifications

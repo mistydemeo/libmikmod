@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: mdriver.c,v 1.1 2005/03/30 01:31:02 raphassenat Exp $
+  $Id: mdriver.c,v 1.2 2005/03/30 19:11:17 realtech Exp $
 
   These routines are used to access the available soundcard drivers.
 

@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: virtch2.c,v 1.2 2005/03/30 17:42:36 realtech Exp $
+  $Id: virtch2.c,v 1.3 2005/03/30 19:11:50 realtech Exp $
 
   High-quality sample mixing routines, using a 32 bits mixing buffer,
   interpolation, and sample smoothing to improve sound quality and remove
@@ -361,6 +361,7 @@ static SLONGLONG MixSIMDStereoNormal(const SWORD* const srce,SLONG* dest,SLONGLO
 
 #elif defined HAVE_ALTIVEC
 	remain = todo&3;
+		remain = todo&3;
 	{
 		vector signed short r0 = vec_ld(0, vol);
 		vector signed short v0 = vec_perm(r0, r0, (vector unsigned char)(0, 1, // l
@@ -1319,4 +1320,4 @@ BOOL VC2_SetNumVoices(void)
 	return 0;
 }
 
-/* ex:set ts=4:  */
+/* ex:set ts=4: */

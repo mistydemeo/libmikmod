@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_m15.c,v 1.1 2005/03/30 01:30:42 raphassenat Exp $
+  $Id: load_m15.c,v 1.2 2005/03/30 19:09:59 realtech Exp $
 
   15 instrument MOD loader
   Also supports Ultimate Sound Tracker (old M15 format)

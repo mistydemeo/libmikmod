@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: mplayer.c,v 1.2 2005/03/30 17:57:43 realtech Exp $
+  $Id: mplayer.c,v 1.3 2005/03/30 19:11:46 realtech Exp $
 
   The Protracker Player Driver
 
@@ -3334,27 +3334,6 @@ MIKMODAPI BOOL Player_Paused(void)
 	return result;
 }
 
-
-// Get current module order
-MIKMODAPI int Player_GetOrder(void)
-{
-	int ret;
-	MUTEX_LOCK(vars);
-	ret = pf ? pf->positions[pf->sngpos ? pf->sngpos-1 : 0]: 0;
-	MUTEX_UNLOCK(vars);
-	return ret;
-}
-
-// Get current module row
-MIKMODAPI int Player_GetRow(void)
-{
-	int ret;
-	MUTEX_LOCK(vars);
-	ret = pf ? pf->patpos : 0;
-	MUTEX_UNLOCK(vars);
-	return ret;
-}
-
 MIKMODAPI void Player_TogglePause(void)
 {
 	MUTEX_LOCK(vars);
@@ -3405,6 +3384,26 @@ MIKMODAPI int Player_QueryVoices(UWORD numvoices, VOICEINFO *vinfo)
 	return numvoices;
 }
 
+
+// Get current module order
+MIKMODAPI int Player_GetOrder(void)
+{
+	int ret;
+	MUTEX_LOCK(vars);
+	ret = pf ? pf->positions[pf->sngpos ? pf->sngpos-1 : 0]: 0;
+	MUTEX_UNLOCK(vars);
+	return ret;
+}
+
+// Get current module row
+MIKMODAPI int Player_GetRow(void)
+{
+	int ret;
+	MUTEX_LOCK(vars);
+	ret = pf ? pf->patpos : 0;
+	MUTEX_UNLOCK(vars);
+	return ret;
+}
 
 
 /* ex:set ts=4: */

@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: mdreg.c,v 1.1 2005/03/30 01:31:02 raphassenat Exp $
+  $Id: mdreg.c,v 1.2 2005/03/30 19:11:13 realtech Exp $
 
   Routine for registering all drivers in libmikmod for the current platform.
 

@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_amf.c,v 1.1 2005/03/30 01:30:41 raphassenat Exp $
+  $Id: load_amf.c,v 1.2 2005/03/30 19:09:32 realtech Exp $
 
   DMP Advanced Module Format loader
 
