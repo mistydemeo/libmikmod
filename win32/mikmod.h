@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: mikmod.h,v 1.1 2005/03/30 01:31:07 raphassenat Exp $
+  $Id: mikmod.h,v 1.2 2005/03/30 17:57:45 realtech Exp $
 
   MikMod sound library include file
 
@@ -604,7 +604,10 @@ MIKMODAPI extern void    Player_Mute(SLONG,...);
 MIKMODAPI extern void    Player_ToggleMute(SLONG,...);
 MIKMODAPI extern int     Player_GetChannelVoice(UBYTE);
 MIKMODAPI extern UWORD   Player_GetChannelPeriod(UBYTE);
-MIKMODAPI extern int     Player_QueryVoices(UWORD numvoices, VOICEINFO *vinfo); 
+MIKMODAPI extern int     Player_QueryVoices(UWORD numvoices, VOICEINFO *vinfo);
+MIKMODAPI extern int     Player_GetRow(void);
+MIKMODAPI extern int     Player_GetOrder(void);
+
 typedef void (*MikMod_callback_t)(unsigned char *data, size_t len);
 typedef void (*MikMod_player_t)(void);
 
