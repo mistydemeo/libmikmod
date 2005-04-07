@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_mod.c,v 1.2 2005/03/30 19:10:02 realtech Exp $
+  $Id: load_mod.c,v 1.3 2005/04/07 19:57:38 realtech Exp $
 
   Generic MOD loader (Protracker, StarTracker, FastTracker, etc)
 
@@ -476,7 +476,7 @@ static BOOL MOD_Load(BOOL curious)
 		q++;
 	}
 
-	of.modtype = strdup(descr);
+	of.modtype = StrDup(descr);
 
 	if (!ML_LoadPatterns())
 		return 0;

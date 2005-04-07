@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_amf.c,v 1.2 2005/03/30 19:09:32 realtech Exp $
+  $Id: load_amf.c,v 1.3 2005/04/07 19:57:38 realtech Exp $
 
   DMP Advanced Module Format loader
 
@@ -384,7 +384,7 @@ BOOL AMF_Load(BOOL curious)
 	of.inittempo = mh->songbpm;
 	AMF_Version[AMFTEXTLEN-3]='0'+(mh->version/10);
 	AMF_Version[AMFTEXTLEN-1]='0'+(mh->version%10);
-	of.modtype   = strdup(AMF_Version);
+	of.modtype   = StrDup(AMF_Version);
 	of.numchn    = mh->numchannels;
 	of.numtrk    = mh->numorders*mh->numchannels;
 	if (mh->numtracks>of.numtrk)

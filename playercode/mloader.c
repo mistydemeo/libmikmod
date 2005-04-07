@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: mloader.c,v 1.2 2005/03/30 19:11:19 realtech Exp $
+  $Id: mloader.c,v 1.3 2005/04/07 19:57:39 realtech Exp $
 
   These routines are used to access the available module loaders
 
@@ -281,6 +281,14 @@ CHAR *DupStr(CHAR* s,UWORD len,BOOL strict)
 		for(t=0;t<len;t++) d[t]=(s[t]<32)?'.':s[t];
 		d[len]=0;
 	}
+	return d;
+}
+
+CHAR *StrDup(CHAR *s)
+{
+	size_t l = strlen(s) + 1;
+	CHAR *d = MikMod_malloc(l);
+	strcpy(d, s);
 	return d;
 }
 

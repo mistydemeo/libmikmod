@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_stx.c,v 1.2 2005/03/30 19:10:06 realtech Exp $
+  $Id: load_stx.c,v 1.3 2005/04/07 19:57:38 realtech Exp $
 
   STMIK 0.2 (STX) module loader
 
@@ -323,10 +323,10 @@ static BOOL STX_Load(BOOL curious)
 	version=_mm_read_I_UWORD(modreader);
 	if(version==mh->patsize) {
 		version    = 0x10;
-		of.modtype = strdup("STMIK 0.2 (STM2STX 1.0)");
+		of.modtype = StrDup("STMIK 0.2 (STM2STX 1.0)");
 	} else {
 		version    = 0x11;
-		of.modtype = strdup("STMIK 0.2 (STM2STX 1.1)");
+		of.modtype = StrDup("STMIK 0.2 (STM2STX 1.1)");
 	}
 
 	/* read the order data */

@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_med.c,v 1.2 2005/03/30 19:10:00 realtech Exp $
+  $Id: load_med.c,v 1.3 2005/04/07 19:57:38 realtech Exp $
 
   Amiga MED module loader
 
@@ -571,7 +571,7 @@ BOOL MED_Load(BOOL curious)
 		of.flags |= UF_HIGHBPM;
 	}
 	MED_Version[12] = mh->id;
-	of.modtype = strdup(MED_Version);
+	of.modtype = StrDup(MED_Version);
 	of.numchn = 0;				/* will be counted later */
 	of.numpat = ms->numblocks;
 	of.numpos = ms->songlen;

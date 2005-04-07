@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_xm.c,v 1.2 2005/03/30 19:10:07 realtech Exp $
+  $Id: load_xm.c,v 1.3 2005/04/07 19:57:38 realtech Exp $
 
   Fasttracker (XM) module loader
 
@@ -697,7 +697,7 @@ BOOL XM_Load(BOOL curious)
 	sprintf(modtype,"%s (XM format %d.%02d)",
 	                tracker,mh->version>>8,mh->version&0xff);
 #endif
-	of.modtype   = strdup(modtype);
+	of.modtype   = StrDup(modtype);
 	of.numchn    = mh->numchn;
 	of.numpat    = mh->numpat;
 	of.numtrk    = (UWORD)of.numpat*of.numchn;   /* get number of channels */

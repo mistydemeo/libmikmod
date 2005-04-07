@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_imf.c,v 1.2 2005/03/30 19:09:54 realtech Exp $
+  $Id: load_imf.c,v 1.3 2005/04/07 19:57:38 realtech Exp $
 
   Imago Orpheus (IMF) module loader
 
@@ -409,7 +409,7 @@ BOOL IMF_Load(BOOL curious)
 
 	/* set module variables */
 	of.songname=DupStr(mh->songname,31,1);
-	of.modtype=strdup(IMF_Version);
+	of.modtype=StrDup(IMF_Version);
 	of.numpat=mh->patnum;
 	of.numins=mh->insnum;
 	of.reppos=0;

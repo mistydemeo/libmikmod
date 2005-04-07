@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: mikmod_internals.h,v 1.2 2005/03/30 19:09:29 realtech Exp $
+  $Id: mikmod_internals.h,v 1.3 2005/04/07 19:57:36 realtech Exp $
 
   MikMod sound library internal definitions
 
@@ -575,6 +575,7 @@ extern BOOL   AllocTracks(void);
 extern BOOL   AllocInstruments(void);
 extern BOOL   AllocSamples(void);
 extern CHAR*  DupStr(CHAR*,UWORD,BOOL);
+extern CHAR*  StrDup(CHAR *s);
 
 /* loader utility functions */
 extern int*   AllocLinear(void);

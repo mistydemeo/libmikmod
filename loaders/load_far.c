@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_far.c,v 1.2 2005/03/30 19:09:35 realtech Exp $
+  $Id: load_far.c,v 1.3 2005/04/07 19:57:38 realtech Exp $
 
   Farandole (FAR) module loader
 
@@ -195,7 +195,7 @@ BOOL FAR_Load(BOOL curious)
 	mh1->stlen     = _mm_read_I_UWORD (modreader);
 
 	/* init modfile data */
-	of.modtype   = strdup(FAR_Version);
+	of.modtype   = StrDup(FAR_Version);
 	of.songname  = DupStr(mh1->songname,40,1);
 	of.numchn    = 16;
 	of.initspeed = mh1->speed;

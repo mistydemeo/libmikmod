@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_uni.c,v 1.2 2005/03/30 19:10:07 realtech Exp $
+  $Id: load_uni.c,v 1.3 2005/04/07 19:57:38 realtech Exp $
 
   UNIMOD (libmikmod's and APlayer's internal module format) loader
 
@@ -591,7 +591,7 @@ BOOL UNI_Load(BOOL curious)
 		sprintf(modtype,"%s",(universion>=0x100)?"APlayer":"MikCvt3");
 #endif
 	}
-	of.modtype=strdup(modtype);
+	of.modtype=StrDup(modtype);
 	MikMod_free(modtype);MikMod_free(oldtype);
 	of.comment=readstring();
 

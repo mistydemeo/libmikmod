@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_s3m.c,v 1.2 2005/03/30 19:10:02 realtech Exp $
+  $Id: load_s3m.c,v 1.3 2005/04/07 19:57:38 realtech Exp $
 
   Screamtracker (S3M) module loader
 
@@ -294,7 +294,7 @@ BOOL S3M_Load(BOOL curious)
 			tracker=NUMTRACKERS; /* IT 2.14p3 */
 		else tracker--;
 	}
-	of.modtype = strdup(S3M_Version[tracker]);
+	of.modtype = StrDup(S3M_Version[tracker]);
 	if(tracker<NUMTRACKERS) {
 		of.modtype[numeric[tracker]] = ((mh->tracker>>8) &0xf)+'0';
 		of.modtype[numeric[tracker]+2] = ((mh->tracker>>4)&0xf)+'0';

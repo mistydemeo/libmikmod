@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_asy.c,v 1.2 2005/03/30 19:09:33 realtech Exp $
+  $Id: load_asy.c,v 1.3 2005/04/07 19:57:38 realtech Exp $
 
   ASYLUM Music Format v1.0 (.amf) loader
   adapted from load_mod.c by Raphael Assenat <raph@raphnet.net>,
@@ -367,7 +367,7 @@ static BOOL ASY_Load(BOOL curious)
 		q++;
 	}
 
-	of.modtype = strdup(descr);
+	of.modtype = StrDup(descr);
 
 	if (!ML_LoadPatterns())
 		return 0;

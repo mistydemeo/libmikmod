@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_669.c,v 1.2 2005/03/30 19:09:29 realtech Exp $
+  $Id: load_669.c,v 1.3 2005/04/07 19:57:38 realtech Exp $
 
   Composer 669 module loader
 
@@ -280,7 +280,7 @@ BOOL S69_Load(BOOL curious)
 	of.initspeed=4;
 	of.inittempo=78;
 	of.songname=DupStr(mh->message,36,1);
-	of.modtype=strdup(S69_Version[memcmp(mh->marker,"JN",2)==0]);
+	of.modtype=StrDup(S69_Version[memcmp(mh->marker,"JN",2)==0]);
 	of.numchn=8;
 	of.numpat=mh->nop;
 	of.numins=of.numsmp=mh->nos;

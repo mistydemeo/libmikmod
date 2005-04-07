@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_dsm.c,v 1.2 2005/03/30 19:09:35 realtech Exp $
+  $Id: load_dsm.c,v 1.3 2005/04/07 19:57:38 realtech Exp $
 
   DSIK internal format (DSM) module loader
 
@@ -265,7 +265,7 @@ BOOL DSM_Load(BOOL curious)
 	/* set module variables */
 	of.initspeed=mh->speed;
 	of.inittempo=mh->bpm;
-	of.modtype=strdup(DSM_Version);
+	of.modtype=StrDup(DSM_Version);
 	of.numchn=mh->numtrk;
 	of.numpat=mh->numpat;
 	of.numtrk=of.numchn*of.numpat;

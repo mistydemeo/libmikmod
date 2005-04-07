@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_m15.c,v 1.2 2005/03/30 19:09:59 realtech Exp $
+  $Id: load_m15.c,v 1.3 2005/04/07 19:57:38 realtech Exp $
 
   15 instrument MOD loader
   Also supports Ultimate Sound Tracker (old M15 format)
@@ -408,9 +408,9 @@ static BOOL M15_Load(BOOL curious)
 	}
 
 	if(ust_loader)
-		of.modtype = strdup("Ultimate Soundtracker");
+		of.modtype = StrDup("Ultimate Soundtracker");
 	else
-		of.modtype = strdup("Soundtracker");
+		of.modtype = StrDup("Soundtracker");
 
 	/* set module variables */
 	of.initspeed = 6;

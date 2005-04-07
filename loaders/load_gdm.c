@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_gdm.c,v 1.2 2005/03/30 19:09:35 realtech Exp $
+  $Id: load_gdm.c,v 1.3 2005/04/07 19:57:38 realtech Exp $
 
   General DigiMusic (GDM) module loader
 
@@ -389,7 +389,7 @@ BOOL GDM_Load(BOOL curious)
 	}
 
 	/* now we fill */
-	of.modtype=strdup(GDM_Version);
+	of.modtype=StrDup(GDM_Version);
 	of.modtype[18]=mh->majorver+'0';
 	of.modtype[20]=mh->minorver/10+'0';
 	of.modtype[21]=mh->minorver%10+'0';
