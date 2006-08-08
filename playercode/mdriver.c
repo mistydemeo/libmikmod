@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: mdriver.c,v 1.2 2005/03/30 19:11:17 realtech Exp $
+  $Id: mdriver.c,v 1.3 2006/08/08 00:06:31 realtech Exp $
 
   These routines are used to access the available soundcard drivers.
 
@@ -72,7 +72,7 @@ MIKMODAPI	UBYTE md_sndfxvolume    = 128;	/* volume of sound effects */
 			UBYTE md_hardchn=0,md_softchn=0;
 
 			void (*md_player)(void) = Player_HandleTick;
-static		BOOL  isplaying=0, initialized = 0;
+static volatile	BOOL  isplaying=0, initialized = 0;
 static		UBYTE *sfxinfo;
 static		int sfxpool;
 

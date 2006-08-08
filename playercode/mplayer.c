@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: mplayer.c,v 1.3 2005/03/30 19:11:46 realtech Exp $
+  $Id: mplayer.c,v 1.4 2006/08/08 00:06:31 realtech Exp $
 
   The Protracker Player Driver
 
@@ -3390,7 +3390,7 @@ MIKMODAPI int Player_GetOrder(void)
 {
 	int ret;
 	MUTEX_LOCK(vars);
-	ret = pf ? pf->positions[pf->sngpos ? pf->sngpos-1 : 0]: 0;
+	ret = pf ? pf->sngpos :0; // pf->positions[pf->sngpos ? pf->sngpos-1 : 0]: 0;
 	MUTEX_UNLOCK(vars);
 	return ret;
 }
