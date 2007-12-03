@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: drv_alsa.c,v 1.2 2005/03/30 19:09:11 realtech Exp $
+  $Id: drv_alsa.c,v 1.3 2007/12/03 20:50:22 denis111 Exp $
 
   Driver for Advanced Linux Sound Architecture (ALSA)
 
@@ -47,7 +47,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include <sys/asoundlib.h>
+#include <alsa/asoundlib.h>
 #if defined(SND_LIB_VERSION) && (SND_LIB_VERSION >= 0x500)
 #undef DRV_ALSA
 #endif
