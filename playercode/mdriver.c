@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: mdriver.c,v 1.3 2006/08/08 00:06:31 realtech Exp $
+  $Id: mdriver.c,v 1.4 2007/12/03 20:59:05 denis111 Exp $
 
   These routines are used to access the available soundcard drivers.
 
@@ -203,7 +203,13 @@ void _mm_registerdriver(struct MDRIVER* drv)
 	/* don't register a MISSING() driver */
 	if ((drv->Name) && (drv->Version)) {
 		if (cruise) {
-			while (cruise->next) cruise = cruise->next;
+			if ( cruise == drv )
+				return;
+			while(cruise->next) {
+				cruise = cruise->next;
+				if ( cruise == drv )
+					return;
+			}
 			cruise->next = drv;
 		} else
 			firstdriver = drv; 
