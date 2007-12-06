@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: sloader.c,v 1.2 2005/03/30 19:11:49 realtech Exp $
+  $Id: sloader.c,v 1.3 2007/12/06 17:46:08 denis111 Exp $
 
   Routines for loading samples. The sample loader utilizes the routines
   provided by the "registered" sample loader.
@@ -145,7 +145,7 @@ static BOOL read_itcompr8(ITPACK* status,MREADER *reader,SWORD *sl_buffer,UWORD 
 	status->bufbits = bufbits;
 	status->last = last;
 	status->buf = buf;
-	return !!(dest-sl_buffer);
+	return (dest-sl_buffer);
 }
 
 /* unpack a 16bit IT packed sample */
@@ -219,7 +219,7 @@ static BOOL read_itcompr16(ITPACK *status,MREADER *reader,SWORD *sl_buffer,UWORD
 	status->bufbits = bufbits;
 	status->last = last;
 	status->buf = buf;
-	return !!(dest-sl_buffer);
+	return (dest-sl_buffer);
 }
 
 static BOOL SL_LoadInternal(void* buffer,UWORD infmt,UWORD outfmt,int scalefactor,ULONG length,MREADER* reader,BOOL dither)
