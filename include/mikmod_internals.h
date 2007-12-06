@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: mikmod_internals.h,v 1.5 2006/08/08 00:06:31 realtech Exp $
+  $Id: mikmod_internals.h,v 1.6 2007/12/06 17:44:29 denis111 Exp $
 
   MikMod sound library internal definitions
 
@@ -555,7 +555,7 @@ extern UWORD   npertab[7*OCTAVE];   /* used by the original MOD loaders */
 extern SBYTE   remap[UF_MAXCHAN];   /* for removing empty channels */
 extern UBYTE*  poslookup;           /* lookup table for pattern jumps after
                                       blank pattern removal */
-extern UBYTE   poslookupcnt;
+extern UWORD   poslookupcnt;
 extern UWORD*  origpositions;
 
 extern BOOL    filters;             /* resonant filters in use */

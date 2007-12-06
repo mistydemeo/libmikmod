@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: mlutil.c,v 1.2 2005/03/30 19:11:35 realtech Exp $
+  $Id: mlutil.c,v 1.3 2007/12/06 17:43:10 denis111 Exp $
 
   Utility functions for the module loader
 
@@ -60,7 +60,7 @@ CHAR *STM_Version[STM_NTRACKERS] = {
 SBYTE  remap[UF_MAXCHAN];   /* for removing empty channels */
 UBYTE* poslookup=NULL;      /* lookup table for pattern jumps after blank
                                pattern removal */
-UBYTE  poslookupcnt;
+UWORD  poslookupcnt;
 UWORD* origpositions=NULL;
 
 BOOL   filters;             /* resonant filters in use */
