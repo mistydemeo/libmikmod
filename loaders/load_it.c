@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_it.c,v 1.3 2005/04/07 19:57:38 realtech Exp $
+  $Id: load_it.c,v 1.4 2010/01/12 03:30:32 realtech Exp $
 
   Impulse tracker (IT) module loader
 
@@ -862,6 +862,11 @@ BOOL IT_Load(BOOL curious)
 #endif
 
 				IT_ProcessEnvelope(vol);
+			
+				// Secunia SA37775
+				if (ih.volpts>= ENVPOINTS)
+					ih.volpts = ENVPOINTS-1;
+				
 				for(u=0;u<ih.volpts;u++)
 					d->volenv[u].val=(ih.volnode[u]<<2);
 

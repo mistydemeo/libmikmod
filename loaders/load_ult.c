@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: load_ult.c,v 1.2 2005/03/30 19:10:06 realtech Exp $
+  $Id: load_ult.c,v 1.3 2010/01/12 03:30:32 realtech Exp $
 
   Ultratracker (ULT) module loader
 
@@ -225,6 +225,10 @@ BOOL ULT_Load(BOOL curious)
 		for(t=0;t<of.numpat;t++)
 			of.patterns[(t*of.numchn)+u]=tracks++;
 
+	// SA37775
+	if (of.numchn>=UF_MAXCHAN)
+		of.numchn=UF_MAXCHAN - 1;
+	
 	/* read pan position table for v1.5 and higher */
 	if(mh.id[14]>='3') {
 		for(t=0;t<of.numchn;t++) of.panning[t]=_mm_read_UBYTE(modreader)<<4;

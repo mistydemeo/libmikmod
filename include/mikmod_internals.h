@@ -20,7 +20,7 @@
 
 /*==============================================================================
 
-  $Id: mikmod_internals.h,v 1.6 2007/12/06 17:44:29 denis111 Exp $
+  $Id: mikmod_internals.h,v 1.7 2010/01/12 03:30:31 realtech Exp $
 
   MikMod sound library internal definitions
 
@@ -43,11 +43,8 @@ extern "C" {
 /*========== More type definitions */
 
 /* SLONGLONG: 64bit, signed */
-#if defined (__arch64__) || defined(__alpha)
+#if defined (__arch64__) || defined(__alpha) || defined (__x64_64) || defined (_LP64) || defined (__powerpc64__)
 typedef long		SLONGLONG;
-#define NATIVE_64BIT_INT
-#elif defined(__powerpc64__)
-typedef long long	SLONGLONG;
 #define NATIVE_64BIT_INT
 #elif defined(__WATCOMC__)
 typedef __int64		SLONGLONG;
